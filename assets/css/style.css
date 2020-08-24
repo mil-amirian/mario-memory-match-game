@@ -1,0 +1,256 @@
+/* FONTS
+font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif; 
+*/
+
+@font-face {
+    font-family: 'super_mario_256regular';
+    src: url('../fonts/supermario256-webfont.woff2') format('woff2'),
+         url('../fonts/supermario256-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ * {
+     box-sizing: border-box;
+ }
+
+body {
+    height: 97vh;
+    background-image: url(../images/game-bg-3.svg);
+    background-size: cover;
+
+}
+.mario-title {
+    font-size: 88px;
+    padding: 5px;
+    color: #9c212c;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    margin: 10px;
+    font-family: 'super_mario_256regular';
+}
+
+.right-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2%;
+    /* padding: 1rem; */
+}
+
+.card {
+    height: 200px;
+    margin-top: 5px;
+    padding: 2px;
+    margin-left: 0.5%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front-card, .back-card { 
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: -2px 5px #000000;
+
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    justify-content: center;
+    background-color: rgb(0,0,0, 0.3);
+    border: solid 1px black;
+    padding: 15px;
+    margin-left: 1rem;
+    margin-top: 7px;
+    box-shadow: -5px 5px rgb(0,0,0, 0.6);
+    border-radius: 25px;
+
+}
+
+.stats {
+    font-family: 'super_mario_256regular';
+    font-size: 32px;
+}
+
+.games-played-container, .attempts-container, .accuracy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    height: 100px;
+}
+
+.games-played-container {
+    background-color: #1d72fa;
+    border: solid 1px white;
+    box-shadow: -5px 5px #000000;
+}
+.attempts-container {
+    background-color: #ffbe0b;
+    border: solid 1px white;
+    box-shadow: -5px 5px #000000;
+}
+.accuracy-container {
+    background-color: #e63946;
+    border: solid 1px white;
+    box-shadow: -5px 5px #000000;
+}
+
+.stat-title {
+    font-family: 'super_mario_256regular';
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: azure;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px black;
+}
+
+.accuracy-stat, .attempts-stat, .games-played-stat {
+    background-color: white;
+    text-align: center;
+    margin: 0 15px 8px 15px;
+    box-shadow: -5px 5px #000000;
+
+}
+
+.back-card {
+    background-image: url(../images/mario-card.jpg);
+}
+.one {
+    background-image: url(../images/mario-chars/mario.jpg);
+}
+.two {
+    background-image: url(../images/mario-chars/luigi.jpg);
+}
+.three {
+    background-image: url(../images/mario-chars/ghost.jpg);
+}
+.four {
+    background-image: url(../images/mario-chars/bowser.jpg);
+}
+.five {
+    background-image: url(../images/mario-chars/princess.jpg);
+}
+.six {
+    background-image: url(../images/mario-chars/shroom.jpg);
+}
+.seven {
+    background-image: url(../images/mario-chars/turtle.jpg);
+}
+.eight {
+    background-image: url(../images/mario-chars/wario.jpg);
+}
+.nine {
+    background-image: url(../images/mario-chars/yoshi.jpg);
+}
+
+
+/* Responsive section */
+
+@media screen and (max-width: 680px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .stats-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+.modal-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal {
+    
+    border-radius: 25px;
+    background-color: #003049;
+    border: solid 25px #fca311;
+    width: 50%;
+    color: gold;
+    font-family: 'super_mario_256regular';
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+
+}
+.won {
+    color: #f0efeb;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 40px;
+    font-family: 'super_mario_256regular';
+
+}
+.modal-container-go {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal-go {
+    
+    border-radius: 25px;
+    background-color: #000000;
+    border: solid 25px #e9240a;
+    width: 70%;
+    color: gold;
+    font-family: 'super_mario_256regular';
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+
+}
+.lost {
+    color: #dd6d05;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 40px;
+    font-family: 'super_mario_256regular';
+
+}
+
+button {
+    background-color: #288d14;
+    padding: 10px;
+    outline: none;
+    width: 350px;
+    height: 75px;
+    font-family: 'super_mario_256regular';
+    color: #f0efeb;
+    font-size: 24px;
+
+}
+
+.hidden {
+    display: none;
+}
