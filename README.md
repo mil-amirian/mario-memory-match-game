@@ -18,4 +18,4 @@ Game Over, if;
 
 ## Contributing
 
-Please email me via my milamirian.com to collaborate
+Please email me via my https://milamirian.com to collaborate
