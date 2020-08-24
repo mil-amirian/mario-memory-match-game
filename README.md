@@ -2,10 +2,11 @@
 
 A fun and addictive Super Mario themed memery-match game created using HTML, CSS & JavaScript. The game uses original Mario game sounds and music.
 
-## Installation
+## Live site
 
-Not required, simply click here to play https://mil-amirian.github.io/mario-memory-match-game/
+Click here to play: https://mil-amirian.github.io/mario-memory-match-game/
 
+![Mario Memory Match](https://user-images.githubusercontent.com/62856013/91100942-ed1f2180-e61a-11ea-9e69-4a7c4819bc51.jpg)
 
 
 ## Rules of the game
