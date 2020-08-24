@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link href="stylesheet" href="assets/fonts/webfontkit-20200729-211338">
+    <title>Mario's Memory Match</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <header class="title"><span class="mario-title">Mario's</span><br>Memory Match</header>
+        </div>
+        <div class="row game">
+            <aside class="left-side col-2">
+                <div class="stats-container">
+                    <h2 class="stats">Stats</h2>
+                    <div class="games-played-container">
+                        <h3 class="stat-title">Games Played</h3>
+                        <h3 class="games-played-stat" id="games-played">0</h3>
+                    </div>
+                    <div class="attempts-container">
+                        <h3 class="stat-title">Attempts</h3>
+                        <h3 class="attempts-stat" id="attempts">0</h3>
+                    </div>
+                    <div class="accuracy-container">
+                        <h3 class="stat-title">Accuracy</h3>
+                        <h3 class="accuracy-stat" id="accuracy">0</h3>
+                    </div>
+                </div>
+            </aside>
+            <main id="gameCards" class="right-side col-10">
+            </main>
+        </div>
+
+    </section>
+    <div class="modal-container hidden">
+        <p class="modal">
+           🎉  Congratulations  🎉 <br> <span class="won">YOU HAVE WON</span>
+        </p>
+        <button id="resetGame">New Game</button>
+    </div>
+    <div class="modal-container-go hidden">
+        <p class="modal-go">
+           !! Sorry !! <br> <span class="lost">YOU HAVE LOST</span>
+        </p>
+        <button id="resetGame-go">Play again</button>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
