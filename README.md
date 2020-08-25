@@ -1,6 +1,6 @@
 # Mario Memory-Match Game
 
-A fun and addictive Super Mario themed memery-match game created using HTML, CSS & JavaScript. The game uses original Mario game sounds and music.
+A fun and addictive Super Mario themed memory-match game created using HTML, CSS & JavaScript. The game uses original Mario game sounds and music.
 
 ## Live site
 
