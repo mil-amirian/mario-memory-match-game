@@ -14,9 +14,4 @@ Click here to play: https://mil-amirian.github.io/mario-memory-match-game/
 
 Game Over, if;
 1. You do not complete the round in under 3 minutes
-2. You get more than 10 incorrect guesses in the round
-
-
-## Contributing
-
-Please email me via my https://milamirian.com to collaborate
+2. You get more than 10 incorrect guesses in any round
